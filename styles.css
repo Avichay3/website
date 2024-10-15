@@ -1,0 +1,69 @@
+/* עיצוב כללי של גוף הדף */
+html, body {
+        background-color: #79c6e1; /* צבע רקע אפור בהיר */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+}
+
+/* עיצוב תיבת הכניסה */
+.login-container {
+    background-color: white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    width: 200%;
+    max-width: 400px; /* רוחב מקסימלי על מחשבים */
+    box-sizing: border-box;
+    margin: 40px;
+}
+
+/* כותרת */
+h1 {
+    text-align: center;
+}
+
+/* עיצוב של שדות טקסט */
+input {
+    display: block;
+    width: 100%; /* הרחבת שדה הטקסט לגודל מלא */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* עיצוב כפתור התחברות */
+button {
+    width: 100%; /* הכפתור תופס את כל הרוחב */
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Media Queries לעיצוב מותאם למובייל */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; /* התיבה תתפוס 90% מהרוחב במסכים קטנים יותר */
+        padding: 15px;
+    }
+
+    button, input {
+        font-size: 14px; /* התאמת גודל הטקסט במובייל */
+    }
+}
+
+/* Media Queries למסכים גדולים יותר */
+@media (min-width: 601px) and (max-width: 1200px) {
+    .login-container {
+        width: 80%; /* התאמת רוחב התיבה למסכים בינוניים */
+        padding: 20px;
+    }
+}
