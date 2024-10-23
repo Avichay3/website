@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>התחברות אומן</title>
+    <title>ברוך הבא למערכת!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>התחברות אומן</h1>
-        <form action="/login-artist" method="post">
-            <label for="username">שם משתמש:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">סיסמה:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="submit">התחבר</button>
-        </form>
+    <div class="welcome-container">
+        <h1>ברוך הבא למערכת!</h1>
+        <p>בחר את סוג המשתמש שלך כדי להתחבר:</p>
+        <div class="buttons-container">
+            <a href="artist.html" class="button">אומן</a>
+            <a href="camp-manager.html" class="button">מנהל קייטנה</a>
+            <a href="owner.html" class="button">מנהל על</a>
+        </div>
     </div>
 </body>
 </html>
