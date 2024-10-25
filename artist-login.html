@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="לוגו האתר" width="150" height="auto">
-    </header>
     <div class="login-container">
         <h1>התחברות אומן</h1>
-        <form action="/login-artist" method="post">
-            <label for="username">שם משתמש:</label>
-            <input type="text" id="username" name="username" required>
+        <form action="/submit-artist-login" method="post">
+            <label for="artist-username">:שם משתמש</label>
+            <input type="text" id="artist-username" name="artist-username" required>
             <br>
-            <label for="password">סיסמה:</label>
-            <input type="password" id="password" name="password" required>
+            <label for="artist-password">:סיסמה</label>
+            <input type="password" id="artist-password" name="artist-password" required>
             <br>
             <button type="submit">התחבר</button>
         </form>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-page-container">
+        <h1>בחר את סוג המשתמש שלך:</h1>
+
+        <!-- תיבת כניסה לאומן -->
+        <div class="login-box">
+            <h2>התחברות אומן</h2>
+            <form action="artist-login.html" method="post">
+                <label for="artist-username">שם משתמש:</label>
+                <input type="text" id="artist-username" name="artist-username" required>
+                <br>
+                <label for="artist-password">סיסמה:</label>
+                <input type="password" id="artist-password" name="artist-password" required>
+                <br>
+                <button type="submit">התחבר</button>
+            </form>
+        </div>
+
+        <!-- תיבת כניסה למנהל -->
+        <div class="login-box">
+            <h2>התחברות מנהל</h2>
+            <form action="manager-login.html" method="post">
+                <label for="manager-username">שם משתמש:</label>
+                <input type="text" id="manager-username" name="manager-username" required>
+                <br>
+                <label for="manager-password">סיסמה:</label>
+                <input type="password" id="manager-password" name="manager-password" required>
+                <br>
+                <button type="submit">התחבר</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
